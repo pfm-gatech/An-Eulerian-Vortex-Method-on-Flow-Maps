@@ -64,6 +64,6 @@ elif case == 1:
     reinit_every = 20
     CFL = 0.5
     from_frame = 0
-    total_frames = 800
+    total_frames = 600
     gen_boundary_mask = no_bond
-    exp_name = "3D_leapfrog" + "_reinit_" + str(reinit_every)  
+    exp_name = "3D_leapfrog_paper_" + "_reinit_" + str(reinit_every)  
