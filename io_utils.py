@@ -1,5 +1,4 @@
 import numpy as np
-import torch
 import imageio.v2 as imageio
 import os
 import shutil
@@ -37,23 +36,6 @@ def comp_vort(vel_img): # compute the curl of velocity
     vort_img = dvdx - dudy
     return vort_img
 
-def comp_vort_3d(vel_img):
-    W, H, D, _ = vel_img.shape
-    dx = 1./H
-    u = vel_img[...,0]
-    v = vel_img[...,1]
-    w = vel_img[...,2]
-    du_dz = u[1:-1,1:-1,2:] - u[1:-1,1:-1,:-2]
-    du_dy = u[1:-1,2:,1:-1] - u[1:-1,:-2,1:-1]
-
-    dv_dx = v[2:,1:-1,1:-1] - v[:-2,1:-1,1:-1]
-    dv_dz = v[1:-1,1:-1,2:] - v[1:-1,1:-1,:-2]
-
-    dw_dx = w[2:,1:-1,1:-1] - w[:-2,1:-1,1:-1]
-    dw_dy = w[1:-1,2:,1:-1] - w[1:-1,:-2,1:-1]
-
-    vort_img = torch.cat([(dw_dy - dv_dz)[...,None], (du_dz - dw_dx)[...,None], (dv_dx - du_dy)[...,None]], dim = -1)
-    return vort_img / (2 * dx)
 
 def write_image(img_xy, outdir, i):
     #pass
