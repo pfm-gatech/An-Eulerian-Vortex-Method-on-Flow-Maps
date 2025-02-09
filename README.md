@@ -33,7 +33,7 @@ An improved version by storing the flow map quantities with the same locations a
 python run_improved.py
 ```
 
-The improved version enables our method to use a longer flow map length, and therefore enhance its vorticity preservation ability. For example, you can use 30 with 3D leapfrog now, instead of 20 in the original paper, and this lead to one more leap in 3D leapfrog.
+The improved version enhances the simulation stability and the vorticity preservation ability, e.g., it leads to one more leap in 3D leapfrog.
 
 Hyperparameters can be tuned by changing the values in the file `hyperparameters.py`.
 
