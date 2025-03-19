@@ -4,6 +4,9 @@ by [Sinan Wang](https://sinanw.com), [Yitong Deng](https://yitongdeng.github.io/
 
 Our paper and video results can be found at our [project website](https://evm.sinanw.com/).
 
+This work has been awarded the **Replicability Stamp**.
+[![](https://www.replicabilitystamp.org/logo/Reproducibility-small.png)](http://www.replicabilitystamp.org#https-github-com-pfm-gatech-an-eulerian-vortex-method-on-flow-maps-git)
+
 ## Installation
 Our code is tested on Windows 11 with CUDA 12.3, Python 3.10.9, and Taichi 1.6.0.
 
@@ -26,6 +29,8 @@ For reproducing the same result in the paper, execute:
 ```bash
 python run_paper.py
 ```
+
+The expected runtime ranges from 30 to 60 minutes, depending on your machine's performance.
 
 An improved version by storing the flow map quantities with the same locations as vorticity can be obtained by running:
 
