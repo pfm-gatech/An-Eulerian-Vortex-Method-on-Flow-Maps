@@ -30,7 +30,7 @@ For reproducing the same result in the paper, execute:
 python run_paper.py
 ```
 
-The expected runtime ranges from 30 to 60 minutes, depending on your machine's performance.
+With the default settings and no code modifications (i.e., the default 3D leapfrog), the expected runtime for the above execution ranges from 30 to 60 minutes, depending on your machine's performance.
 
 An improved version by storing the flow map quantities with the same locations as vorticity can be obtained by running:
 
