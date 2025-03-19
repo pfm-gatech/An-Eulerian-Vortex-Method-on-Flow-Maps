@@ -4,7 +4,7 @@ by [Sinan Wang](https://sinanw.com), [Yitong Deng](https://yitongdeng.github.io/
 
 Our paper and video results can be found at our [project website](https://evm.sinanw.com/).
 
-This work has been awarded the **Replicability Stamp**.
+This work has been awarded the **[Replicability Stamp](http://www.replicabilitystamp.org#https-github-com-pfm-gatech-an-eulerian-vortex-method-on-flow-maps-git)**.
 [![](https://www.replicabilitystamp.org/logo/Reproducibility-small.png)](http://www.replicabilitystamp.org#https-github-com-pfm-gatech-an-eulerian-vortex-method-on-flow-maps-git)
 
 ## Installation
